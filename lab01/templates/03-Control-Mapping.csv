@@ -1,0 +1,4 @@
+Control ID,Control Description,Type,Risk Addressed,Implementation Effort,Verification Method
+C1,Enable MFA for VPN and SaaS access,Technical,R2;R6,Medium,Identity provider configuration
+C2,Security awareness training program,Organizational,R4,Low,Training attendance records
+C3,Network segmentation of critical systems,Technical,R1,High,Network diagram and firewall rules

@@ -1,0 +1,4 @@
+Risk ID,Asset,Threat,Vulnerability,Impact,Likelihood,Risk Score,Priority,Treatment Option,Proposed Control
+R1,Patient Database,Ransomware infection,Flat network architecture,5,3,15,High,Mitigate,Network segmentation and EDR
+R2,Telemedicine Platform,Account takeover,Shared user accounts,5,4,20,Critical,Mitigate,MFA and unique accounts
+R3,Backup System,Data loss,Backup restore never tested,5,3,15,High,Mitigate,Regular restore testing

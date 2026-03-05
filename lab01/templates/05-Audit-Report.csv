@@ -1,0 +1,3 @@
+Finding ID,Severity,Description,Risk,Recommendation,Verification
+F1,High,Shared accounts on telemedicine platform,Lack of accountability and possible unauthorized access,Implement unique accounts and MFA,Account audit and access logs
+F2,High,Backup restore procedures never tested,Potential inability to recover after ransomware,Perform restore tests twice per year,Restore test documentation
