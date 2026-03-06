@@ -9,3 +9,4 @@ R7,Reception PCs,Malware infection,Users installing unknown software,3,3,9,Mediu
 R8,VMware Server Infrastructure,Service disruption,Unpatched systems,5,3,15,High,Mitigate,Regular patch management
 R9,Patient Database,Data breach,Insufficient access control monitoring,5,3,15,High,Mitigate,Access logging and monitoring
 R10,Corporate Client Contracts,Unauthorized access,Excessive user permissions,4,3,12,Medium,Mitigate,Role-based access control
+R11,Internal Network,Unauthorized access,Guest WiFi not isolated,4,3,12,Medium,Mitigate,Network segmentation
