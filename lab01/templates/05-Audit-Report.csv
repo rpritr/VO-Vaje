@@ -1,3 +1,7 @@
 Finding ID,Severity,Description,Risk,Recommendation,Verification
 F1,High,Shared accounts on telemedicine platform,Lack of accountability and possible unauthorized access,Implement unique accounts and MFA,Account audit and access logs
 F2,High,Backup restore procedures never tested,Potential inability to recover after ransomware,Perform restore tests twice per year,Restore test documentation
+F3,Medium,Telemedicine platform lacks DDoS protection,Service outage and disruption of telemedicine consultations,Implement DDoS protection through cloud provider or firewall service,Service configuration and monitoring reports
+F4,High,Flat internal network architecture,Ransomware or malware can spread across systems,Implement network segmentation between critical systems and user devices,Network diagram and firewall configuration review
+F5,Medium,Employees lack regular security awareness training,Increased likelihood of phishing and credential compromise,Conduct annual security awareness training and phishing simulations,Training attendance records and simulation results
+F6,Medium,No centralized security logging and monitoring,Delayed detection of security incidents or unauthorized access,Implement centralized log collection and monitoring,Log management system reports and audit review
