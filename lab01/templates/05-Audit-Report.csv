@@ -1,3 +1,8 @@
 Finding ID,Severity,Description,Risk,Recommendation,Verification
 F1,High,Shared accounts on telemedicine platform,Lack of accountability and possible unauthorized access,Implement unique accounts and MFA,Account audit and access logs
 F2,High,Backup restore procedures never tested,Potential inability to recover after ransomware,Perform restore tests twice per year,Restore test documentation
+F3,High,Single flat internal network,Malware or ransomware can spread across the entire network,Implement network segmentation using VLANs,Network diagrams and firewall configuration
+F4,Medium,Security awareness training outdated,Employees may fall victim to phishing attacks,Conduct annual security awareness training and phishing simulations,Training records and phishing test results
+F5,Medium,Lack of endpoint encryption on some devices,Risk of data exposure if laptops or tablets are lost or stolen,Enable full disk encryption (BitLocker),Device configuration audit
+F6,Medium,Incomplete access review process,Excessive user privileges may exist,Conduct access reviews every 6 months,Access review documentation
+F7,Low,Limited security monitoring,Delayed detection of suspicious activities,Implement centralized logging and monitoring,Security monitoring dashboard

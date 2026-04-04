@@ -2,3 +2,21 @@ Asset ID,Asset Name,Type,Owner,Location,Confidentiality,Integrity,Availability,C
 A1,Patient Database,Information,Medical Director,On-prem server,H,H,H,Critical
 A2,Active Directory,System,IT Manager,Server room,H,H,H,Critical
 A3,Telemedicine Platform,SaaS,Medical Director,Cloud,H,H,H,Critical
+A4,Local backup,System,IT Manager,Server room,H,H,H,Critical
+A5,Microsoft 365 Email & Collaboration,Cloud Service,IT Manager,Microsoft Cloud,Medium,High,High,High
+A6,Active Directory Domain,Infrastructure,IT Manager,On-prem Servers,High,High,High,Critical
+A7,VMware Virtualization Platform,Infrastructure,IT Manager,Server Room,Medium,High,High,High
+A8,Physical Server 1,Hardware,IT Manager,Server Room,Medium,High,High,High
+A9,Physical Server 2,Hardware,IT Manager,Server Room,Medium,High,High,High
+A10,NAS Backup System,Hardware,IT Manager,Server Room,High,High,High,Critical
+A11,Medical Workstations,Hardware,Medical Director,Clinics / Examination Rooms,High,High,Medium,High
+A12,Staff Laptops,Hardware,HR Manager,Office / Remote,Medium,Medium,Medium,Medium
+A13,Mobile Tablets,Hardware,Operations Manager,Clinics,Medium,Medium,Medium,Medium
+A14,Reception PCs,Hardware,Operations Manager,Reception Desk,Medium,Medium,Medium,Medium
+A15,Patient Medical Records Database,Data,Medical Director,On-prem VM,High,High,High,Critical
+A16,Laboratory Results Database,Data,Laboratory Manager,On-prem VM,High,High,High,Critical
+A17,Employee HR Records,Data,HR Manager,Cloud / HR System,High,High,Medium,High
+A18,Financial Accounting System,SaaS Application,Finance Manager,Cloud,High,High,Medium,High
+A19,Telemedicine Video Recordings,Data,Medical Director,Cloud Storage,High,High,Medium,High
+A20,Corporate Client Contracts,Data,Finance Manager,SharePoint,High,High,Medium,High
+A21,Internal Network Infrastructure,Network,IT Manager,Office Network,Medium,High,High,High

@@ -1,0 +1,25 @@
+Asset ID,Asset Name,Category,Owner,Location,Confidentiality,Integrity,Availability,Criticality,Notes
+A01,ERP System,Application,CIO,Data Center VM,H,H,H,Critical,Production planning inventory purchasing and finance
+A02,Warehouse Management System,Application,Warehouse Manager,Data Center VM,M,H,H,High,Supports scanners stock control and dispatch
+A03,Microsoft 365 Tenant,Cloud Service,IT Manager,Cloud,M,H,H,High,Email Teams SharePoint and OneDrive
+A04,File Server,Information System,IT Manager,Data Center VM,H,H,H,Critical,Internal documents contracts and operating procedures
+A05,Payroll System,Application,HR Manager,Data Center VM,H,H,M,High,Employee payroll and personnel records
+A06,Recipe and Product Specification Database,Information Asset,Quality Manager,Data Center VM,H,H,H,Critical,Recipes allergen data labels and product specs
+A07,Production Line Control PCs 30,OT Endpoint,Production Manager,Plant 1 and Plant 2,M,H,H,Critical,Industrial PCs operating processing and packing lines
+A08,Warehouse Handheld Scanners 20,Endpoint,Warehouse Manager,Warehouse,M,M,H,Medium,Barcode scanning and goods movement
+A09,Windows Laptops 90,Endpoint,IT Manager,Distributed,M,M,H,Medium,Corporate endpoints for office and management users
+A10,Smartphones 15,Mobile Endpoint,IT Manager,Distributed,M,M,M,Medium,Managers and on call staff devices
+A11,Virtualization Hosts 4,Infrastructure,IT Manager,HQ Server Room,M,H,H,Critical,Run core virtual servers
+A12,Virtual Machines 20,Infrastructure,IT Manager,HQ Server Room,M,H,H,High,AD ERP WMS file services print and utilities
+A13,Active Directory and Identity Services,System,IT Manager,Data Center VM,H,H,H,Critical,Authentication authorization and group policy
+A14,Firewall and VPN Gateway,Infrastructure,IT Manager,HQ Server Room,M,H,H,Critical,Internet edge remote access and traffic filtering
+A15,Core Switching and Network Infrastructure,Infrastructure,IT Manager,HQ and Plants,M,H,H,Critical,Switches routing and site connectivity
+A16,Corporate LAN,Network,IT Manager,All Sites,M,H,H,High,User and server network
+A17,Production LAN,OT Network,Production Manager,Plant 1 and Plant 2,M,H,H,Critical,Currently connected to corporate LAN
+A18,Guest WiFi,Network,IT Manager,HQ and Plants,L,L,L,Low,Visitor wireless access
+A19,Backup Repository,Infrastructure,IT Manager,HQ Server Room,H,H,H,Critical,Local backup storage currently on same network
+A20,CCTV and Physical Access Control,System,Facilities Manager,HQ and Plants,M,H,M,Medium,Physical security and visitor monitoring
+A21,Supplier and Logistics EDI Interfaces,Integration,Supply Chain Manager,Cloud and ERP,M,H,H,High,Order confirmations shipment notices and partner exchange
+A22,QA Laboratory Records and Test Results,Information Asset,Quality Manager,Plant Labs,H,H,H,High,Food safety results batch release and traceability evidence
+A23,Internet Connectivity and ISP Link,Service,IT Manager,HQ,M,H,H,High,Dependency for cloud services vendor support and remote access
+A24,Personnel and Key Operators,People,HR Manager,All Sites,N/A,N/A,N/A,High,Users administrators operators and key decision makers
