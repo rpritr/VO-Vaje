@@ -1,3 +1,8 @@
 Business Process,Maximum Tolerable Downtime,RTO,RPO,Dependencies,Impact if Unavailable
 Patient Registration,24 hours,8 hours,4 hours,Active Directory;Database,Patient service disruption
 Telemedicine Consultation,12 hours,4 hours,1 hour,Telemedicine SaaS;Internet connectivity,Reputation damage and revenue loss
+Laboratory Processing,12 hours,4 hours,1 hour,Laboratory Information System;Medical Workstations;Database,Delayed test results affecting patient treatment
+Medical Examination,24 hours,8 hours,4 hours,Patient Database;Medical Workstations;Internal Network,Reduced clinical operations and patient backlog
+Appointment Scheduling,24 hours,8 hours,4 hours,Patient Management System;Microsoft 365,Patient dissatisfaction and operational delays
+Billing & Insurance Processing,48 hours,12 hours,8 hours,Accounting System;Patient Database,Financial loss and delayed payments
+Corporate Client Health Services,48 hours,12 hours,8 hours,Telemedicine Platform;HR Database;Email,Contractual penalties and reputational impact
