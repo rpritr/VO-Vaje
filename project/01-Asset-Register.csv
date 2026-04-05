@@ -1,25 +1,26 @@
-Asset ID,Asset Name,Category,Owner,Location,Confidentiality,Integrity,Availability,Criticality,Notes
-A01,ERP System,Application,CIO,Data Center VM,H,H,H,Critical,Production planning inventory purchasing and finance
-A02,Warehouse Management System,Application,Warehouse Manager,Data Center VM,M,H,H,High,Supports scanners stock control and dispatch
-A03,Microsoft 365 Tenant,Cloud Service,IT Manager,Cloud,M,H,H,High,Email Teams SharePoint and OneDrive
-A04,File Server,Information System,IT Manager,Data Center VM,H,H,H,Critical,Internal documents contracts and operating procedures
-A05,Payroll System,Application,HR Manager,Data Center VM,H,H,M,High,Employee payroll and personnel records
-A06,Recipe and Product Specification Database,Information Asset,Quality Manager,Data Center VM,H,H,H,Critical,Recipes allergen data labels and product specs
-A07,Production Line Control PCs 30,OT Endpoint,Production Manager,Plant 1 and Plant 2,M,H,H,Critical,Industrial PCs operating processing and packing lines
-A08,Warehouse Handheld Scanners 20,Endpoint,Warehouse Manager,Warehouse,M,M,H,Medium,Barcode scanning and goods movement
-A09,Windows Laptops 90,Endpoint,IT Manager,Distributed,M,M,H,Medium,Corporate endpoints for office and management users
-A10,Smartphones 15,Mobile Endpoint,IT Manager,Distributed,M,M,M,Medium,Managers and on call staff devices
-A11,Virtualization Hosts 4,Infrastructure,IT Manager,HQ Server Room,M,H,H,Critical,Run core virtual servers
-A12,Virtual Machines 20,Infrastructure,IT Manager,HQ Server Room,M,H,H,High,AD ERP WMS file services print and utilities
-A13,Active Directory and Identity Services,System,IT Manager,Data Center VM,H,H,H,Critical,Authentication authorization and group policy
-A14,Firewall and VPN Gateway,Infrastructure,IT Manager,HQ Server Room,M,H,H,Critical,Internet edge remote access and traffic filtering
-A15,Core Switching and Network Infrastructure,Infrastructure,IT Manager,HQ and Plants,M,H,H,Critical,Switches routing and site connectivity
-A16,Corporate LAN,Network,IT Manager,All Sites,M,H,H,High,User and server network
-A17,Production LAN,OT Network,Production Manager,Plant 1 and Plant 2,M,H,H,Critical,Currently connected to corporate LAN
-A18,Guest WiFi,Network,IT Manager,HQ and Plants,L,L,L,Low,Visitor wireless access
-A19,Backup Repository,Infrastructure,IT Manager,HQ Server Room,H,H,H,Critical,Local backup storage currently on same network
-A20,CCTV and Physical Access Control,System,Facilities Manager,HQ and Plants,M,H,M,Medium,Physical security and visitor monitoring
-A21,Supplier and Logistics EDI Interfaces,Integration,Supply Chain Manager,Cloud and ERP,M,H,H,High,Order confirmations shipment notices and partner exchange
-A22,QA Laboratory Records and Test Results,Information Asset,Quality Manager,Plant Labs,H,H,H,High,Food safety results batch release and traceability evidence
-A23,Internet Connectivity and ISP Link,Service,IT Manager,HQ,M,H,H,High,Dependency for cloud services vendor support and remote access
-A24,Personnel and Key Operators,People,HR Manager,All Sites,N/A,N/A,N/A,High,Users administrators operators and key decision makers
+Asset ID,Asset Name,Type,Owner,Location,Confidentiality,Integrity,Availability,Criticality,Notes
+A1,Microsoft 365 Tenant,Cloud Service,IT Manager,Cloud,High,High,High,Critical,"Email, Teams, SharePoint, OneDrive, identities"
+A2,ERP System,Application,Finance Manager,Cloud/Hosted,High,High,High,Critical,"Offers, orders, invoices, stock and finance"
+A3,CRM System,Application,Sales Manager,Cloud,Medium,High,High,High,"Customer accounts, pipeline, contracts"
+A4,PSA / Ticketing System,Application,Service Manager,Cloud,High,High,High,Critical,"Support tickets, SLA tracking, service records"
+A5,RMM Platform,Cloud Service,Head of Engineering,Cloud,High,High,High,Critical,Remote monitoring and administration of customer endpoints/servers
+A6,Password Vault / PAM,Security System,IT Manager,Cloud,High,High,High,Critical,Privileged credentials and shared secrets
+A7,VPN Gateway,Infrastructure,Network Lead,Office / Cloud,Medium,High,High,High,Remote access for employees and admins
+A8,Firewall Appliance,Infrastructure,Network Lead,Office,Medium,High,High,High,Perimeter security and site connectivity
+A9,Core Switches and Wi-Fi,Infrastructure,Network Lead,Office,Low,High,High,Medium,Internal connectivity
+A10,Virtualization Hosts,Infrastructure,Systems Lead,Server Room,Medium,High,High,High,Hosts internal servers and lab VMs
+A11,Internal File Server / NAS,Infrastructure,Systems Lead,Server Room,High,High,High,Critical,"Shared documents, exports, internal backups"
+A12,Backup Repository,Infrastructure,Systems Lead,Server Room / Cloud,High,High,High,Critical,Backup copies of critical systems
+A13,Documentation Repository,Information,PMO / Engineering,SharePoint/Confluence,High,High,High,Critical,"Customer diagrams, configs, SOPs"
+A14,Admin Workstations,Endpoint,IT Manager,Office / Remote,High,High,High,Critical,Used by sysadmins and security engineers
+A15,User Laptops,Endpoint,IT Manager,Office / Remote,Medium,Medium,High,Medium,35 standard employee laptops
+A16,Mobile Phones,Endpoint,IT Manager,Mobile,Medium,Medium,Medium,Medium,10 company phones for managers and engineers
+A17,Test / Lab Environment,Infrastructure,Engineering Lead,Office,Low,High,Medium,Medium,Validation and staging of solutions
+A18,Customer Contracts and SLA Records,Information,Sales Manager,ERP/SharePoint,High,High,Medium,High,Commercial and contractual obligations
+A19,HR and Payroll Data,Information,HR Manager,ERP/M365,High,High,Medium,High,Employee personal and payroll data
+A20,Finance and Accounting Records,Information,Finance Manager,ERP,High,High,Medium,High,"Invoices, payments, accounting"
+A21,Vendor Portals and Distributor Accounts,External Service,Procurement Lead,Cloud,Medium,High,Medium,Medium,Ordering equipment and licenses
+A22,Security Monitoring Logs,Information,Security Lead,M365 / SIEM,Medium,High,High,High,Audit logs and security events
+A23,Remote Access to Customer Environments,Access Service,Head of Engineering,Customer Systems,High,High,High,Critical,"VPNs, jump hosts, admin portals"
+A24,Corporate Website and Email Domain,Digital Asset,Marketing Lead,Cloud,Medium,High,High,High,Brand trust and phishing exposure
+A25,Employees and Contractors,People,HR Manager,All Locations,N/A,N/A,N/A,High,Human factor and operational knowledge
