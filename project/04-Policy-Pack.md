@@ -1,170 +1,110 @@
-# GreenFields Food Processing Ltd. - Security Policy Pack
+# Policy Pack - NetSecure d.o.o.
 
-**Document Owner:** IT Manager  
-**Approved By:** Managing Director  
-**Review Cycle:** Annual or after a major incident  
-**Applies To:** All employees, contractors, temporary staff, and third parties with access to GreenFields systems or data
+This minimum viable policy pack establishes a practical governance baseline for a 45-person IT company providing equipment sales, system integration, security integration, support and maintenance services.
 
----
-
-## 1. Information Security Governance Policy (GF-POL-001)
+## 1. Access Control Policy
 
 ### Purpose
-To establish the minimum governance structure required to manage information security risk in a consistent and defensible manner.
+To ensure that access to company and customer systems is granted on a need-to-know and least-privilege basis.
 
-### Policy Statements
-- GreenFields shall maintain a documented asset register, risk register, control mapping, and incident log.
-- Management shall review security risks, incidents, and key metrics at least quarterly.
-- Each critical asset shall have a named business owner and a named technical owner where applicable.
-- Security decisions shall be risk-based and aligned to business continuity needs for production, quality, warehousing, and distribution.
-- Exceptions to policy must be documented, approved by management, and reviewed every 90 days.
+### Core Rules
+- Every user must have an individual named account.
+- Shared administrative accounts are prohibited unless a documented break-glass exception is approved.
+- MFA is mandatory for Microsoft 365, VPN, ticketing, ERP, vault and all privileged accounts.
+- Privileged access must be performed from managed admin workstations where feasible.
+- Access rights must be reviewed at least quarterly.
+- Accounts must be disabled within 24 hours of employee departure and immediately for high-risk terminations.
 
-### Roles and Responsibilities
-- **Managing Director:** approves risk tolerance and major remediation funding.
-- **IT Manager:** maintains governance records and coordinates implementation.
-- **Business Owners:** accept or escalate residual risk for their processes.
-- **All Staff:** comply with policies and report security concerns.
-
-### Compliance
-Non-compliance may lead to disciplinary action, supplier escalation, or removal of system access.
-
----
-
-## 2. Access Control and Identity Policy (GF-POL-002)
+## 2. Acceptable Use Policy
 
 ### Purpose
-To ensure only authorized users have access to company systems and data, and only to the extent needed for their role.
+To define the permitted use of company devices, accounts and information assets.
 
-### Policy Statements
-- Every user must have a unique named account. Shared user or administrator accounts are prohibited except for tightly controlled emergency break-glass access.
-- Multi-factor authentication is mandatory for Microsoft 365, VPN, ERP, privileged accounts, and any externally accessible system.
-- Access rights shall follow least privilege and role-based access control.
-- Privileged access shall be restricted to authorized IT personnel and reviewed quarterly.
-- New joiners must receive only approved access based on role. Leavers must have all access removed within 24 hours.
-- Passwords must be at least 12 characters or use approved passphrases. Reuse of shared or generic credentials is prohibited.
-- Service accounts must be documented, owner-assigned, and reviewed at least every six months.
+### Core Rules
+- Company IT resources are for authorized business use only.
+- Users must not install unauthorized software or browser extensions.
+- Users must not store customer documentation or credentials in personal cloud services or local unmanaged files.
+- Devices must be locked when unattended.
+- Suspicious emails, MFA prompts, remote access requests and unusual customer incidents must be reported immediately.
+- Users must not bypass security controls or share passwords.
 
-### User Responsibilities
-- Users must not share credentials or approve MFA prompts they did not initiate.
-- Users must lock workstations when unattended.
-- Users must immediately report suspected credential theft.
-
-### Verification
-Quarterly access review, monthly MFA coverage review, and audit of privileged accounts.
-
----
-
-## 3. Acceptable Use and Endpoint Security Policy (GF-POL-003)
+## 3. Backup and Recovery Policy
 
 ### Purpose
-To define acceptable use of company technology and minimum protection requirements for user devices.
+To ensure recoverability of critical data and services after accidental deletion, cyber incidents or system failure.
 
-### Policy Statements
-- Company IT systems are for authorized business use only.
-- Users must not install unauthorized software, disable security tools, or bypass company controls.
-- Laptops and smartphones used for company work must be enrolled in approved management controls where supported.
-- Full-disk encryption shall be enabled on all company laptops and mobile devices that store or access business data.
-- Devices shall auto-lock after a maximum of 10 minutes of inactivity.
-- USB media use shall be restricted to approved business need and scanned before use.
-- Production line PCs may only run approved software and may not be used for web browsing or personal email unless explicitly authorized.
-- Lost or stolen devices must be reported immediately.
+### Core Rules
+- Critical systems and data must be backed up according to the 3-2-1 principle.
+- Backup copies must include at least one offsite or immutable copy.
+- Backup credentials must be separate from the main production domain.
+- Restore tests must be performed monthly for critical systems and documented.
+- Failed backup or restore tests must be escalated to the IT Manager within one business day.
+- Recovery priorities must align with the approved BIA and DR Plan.
 
-### Prohibited Activities
-- Sharing accounts or passwords
-- Using personal cloud storage for company data
-- Connecting unauthorized devices to internal or production networks
-- Opening suspicious email attachments or links without validation
-
-### Verification
-Device compliance reporting, spot checks, and incident review.
-
----
-
-## 4. Backup, Recovery, and Retention Policy (GF-POL-004)
+## 4. Incident Response Policy
 
 ### Purpose
-To ensure critical systems and data can be restored in a timely and reliable manner after cyber incidents, system failure, or human error.
+To provide a consistent process for detecting, reporting, triaging, containing and recovering from security incidents.
 
-### Policy Statements
-- GreenFields shall follow the **3-2-1** backup principle: three copies of data, on two media types, with one copy offsite or otherwise isolated.
-- Critical systems including ERP, WMS, Active Directory, file server, recipe database, and quality records must be backed up daily.
-- At least one backup copy must be immutable or offline and protected by separate credentials.
-- Backup data must be encrypted at rest and in transit.
-- Restore tests for critical systems shall be performed monthly; non-critical restore tests shall be performed quarterly.
-- Backup retention periods must support operational, contractual, and regulatory needs.
-- Failed backups or failed restore tests must be escalated within one business day.
+### Core Rules
+- All employees must report suspected incidents immediately.
+- Security incidents include phishing, malware, account compromise, data leakage, lost devices, unauthorized access and customer-impacting outages with a security dimension.
+- The IT Manager is the incident owner unless delegated.
+- Incidents must be classified by severity and recorded in the incident register.
+- Evidence must be preserved before destructive actions when feasible.
+- Customer communication must be coordinated through the Service Manager or Account Manager.
+- Regulatory or contractual notification obligations must be evaluated for every data-related incident.
 
-### Minimum Backup Scope
-- System configuration backups
-- Virtual machine backups
-- Application data backups
-- Key exportable cloud data where technically feasible
-- Network and firewall configuration backups
-
-### Verification
-Backup success reports, restore test evidence, and annual DR exercise results.
-
----
-
-## 5. Incident Response and Reporting Policy (GF-POL-005)
+## 5. Data Classification and Handling Policy
 
 ### Purpose
-To ensure security incidents are reported, contained, investigated, and recovered from in a coordinated and timely manner.
+To protect internal and customer information according to business sensitivity.
 
-### Policy Statements
-- All employees must immediately report suspected incidents to IT.
-- Incidents include phishing, malware, lost devices, unauthorized access, unusual system behavior, data leakage, and operational disruption linked to IT.
-- The IT Manager shall maintain an incident register and severity classification process.
-- High and critical incidents shall have assigned incident leads, containment actions, communication owners, and post-incident reviews.
-- Evidence must be preserved where feasible. Infected systems should be isolated, not wiped, until triage is complete unless safety or operations demand faster action.
-- Management must be informed promptly of incidents affecting production, customer commitments, regulated data, or significant financial impact.
-- External notifications to customers, insurers, regulators, or suppliers shall be coordinated by management and legal or privacy representatives as needed.
+### Classification Levels
+- Public
+- Internal
+- Confidential
+- Restricted
 
-### Response Targets
-- Triage of reported incident: within 30 minutes during business hours
-- Initial containment for high or critical incidents: within 4 hours where feasible
-- Post-incident review: within 5 business days of closure
+### Core Rules
+- Customer network diagrams, security configurations, credentials, contracts, HR data and finance records must be classified at least Confidential, with the most sensitive items marked Restricted.
+- Restricted data must only be stored in approved repositories with controlled sharing.
+- Sensitive exports must have an owner and retention period.
+- Access to documentation repositories and tickets containing sensitive customer data must be role-based.
+- Information must be deleted or archived according to business, legal and contractual requirements.
 
-### Verification
-Incident log quality, tabletop exercises, corrective action tracking.
-
----
-
-## 6. Vendor and Third-Party Security Policy (GF-POL-006)
+## 6. Vendor Security Policy
 
 ### Purpose
-To reduce the risk introduced by suppliers, service providers, logistics partners, and outsourced support.
+To reduce third-party risk from vendors, distributors, SaaS providers and subcontractors.
 
-### Policy Statements
-- Critical suppliers with network connectivity, data access, or operational dependency must undergo security review before onboarding and at least annually thereafter.
-- Contracts with critical vendors should include confidentiality terms, incident notification requirements, minimum security expectations, and termination or access revocation provisions.
-- Third-party remote access must be approved, time-bound where possible, and protected by MFA.
-- Vendors shall receive only the minimum access needed to deliver their service.
-- High-risk vendors should be prioritized based on business impact to production, warehousing, quality, finance, or customer data.
-- Security findings from suppliers must be tracked to closure or risk acceptance.
+### Core Rules
+- Critical vendors must undergo a documented security review before onboarding.
+- Contracts with relevant vendors must include confidentiality, breach notification and data protection clauses.
+- Integrations with third-party tools must use scoped permissions where possible.
+- Vendor access must be reviewed regularly and removed when no longer required.
+- Critical suppliers supporting customer-facing services must be recorded in the vendor register with owner and review date.
 
-### Verification
-Vendor register, review checklist, contract evidence, and access audit.
-
----
-
-## 7. Patch and Vulnerability Management Policy (GF-POL-007)
+## 7. Patch and Vulnerability Management Policy
 
 ### Purpose
-To reduce exposure to known vulnerabilities while minimizing disruption to food production operations.
+To reduce the risk of exploitation from known weaknesses.
 
-### Policy Statements
-- GreenFields shall maintain an inventory of systems in scope for patching and vulnerability review.
-- Critical security patches should be applied within 7 days where compatible and operationally feasible.
-- Standard monthly patch cycles shall apply to endpoints, servers, and supported infrastructure.
-- Production systems requiring maintenance windows must follow a documented testing and scheduling process.
-- Exceptions must be approved by the asset owner and IT Manager, with compensating controls where needed.
-- Unsupported software or operating systems must be identified, risk-assessed, and replaced or isolated.
+### Core Rules
+- Critical security patches must be applied within 7 days unless an approved exception exists.
+- Standard patches must be applied within 30 days.
+- Internet-facing systems, admin workstations and security tooling receive priority.
+- Vulnerability scans must be reviewed regularly and tracked to closure.
+- Exceptions must be documented with risk owner approval and compensating controls.
 
-### Verification
-Monthly patch compliance dashboard, exception register, vulnerability review notes.
+## 8. Joiner-Mover-Leaver Policy
 
----
+### Purpose
+To ensure timely provisioning, change and removal of access throughout the employment lifecycle.
 
-## Policy Acknowledgement
-All personnel must read and acknowledge policies relevant to their role. Managers are responsible for reinforcing compliance within their teams.
+### Core Rules
+- HR and IT must use a formal checklist for onboarding and offboarding.
+- New access must be role-based and approved by a manager.
+- Role changes must trigger access review.
+- Departed staff must return devices and lose all logical access promptly.
+- Shared secrets known to departed staff must be rotated where relevant.
