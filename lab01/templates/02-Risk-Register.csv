@@ -2,14 +2,12 @@ Risk ID,Asset,Threat,Vulnerability,Impact,Likelihood,Risk Score,Priority,Treatme
 R1,Patient Database,Ransomware infection,Flat network architecture,5,3,15,High,Mitigate,Network segmentation and EDR
 R2,Telemedicine Platform,Account takeover,Shared user accounts,5,4,20,Critical,Mitigate,MFA and unique accounts
 R3,Backup System,Data loss,Backup restore never tested,5,3,15,High,Mitigate,Regular restore testing
-
-1. If ransomware infection exploits flat network architecture then impact is High on Patient Database.
-2. If account takeover exploits shared user accounts then impact is Critical on Telemedicine Platform.
-3. If data loss exploits untested backup restoration then impact is High on Backup System.
-4. If phishing attack exploits lack of user awareness then impact is High on Microsoft 365 accounts.
-5. If unauthorized access exploits weak access control then impact is High on Patient Records.
-6. If Virtual Private Network (VPN) compromise exploits weak authentication then impact is High on Internal Network.
-7. If malware infection exploits outdated endpoints then impact is Medium on Windows laptops, but may escalate to High if lateral movement occurs.
-8. If insider misuse exploits excessive privileges then impact is High on HR Data.
-9. If data breach exploits misconfigured cloud services then impact is Critical on Telemedicine Video Records.
-10. If system outage exploits single point of failure then impact is Medium on Lab Diagnostics System.
+R4,Microsoft 365,Phishing attack,Lack of user awareness,4,4,16,Critical,Mitigate,Security training + MFA
+R5,Patient Data,Data breach,Weak access control,5,3,15,High,Mitigate,Access control + encryption
+R6,VPN Access,Unauthorized access,Weak authentication,5,3,15,High,Mitigate,MFA for VPN
+R7,Endpoints,Malware infection,Outdated systems,3,3,9,Medium,Mitigate,Patch management + EDR
+R8,Internal Network,Lateral movement,Flat network architecture,5,3,15,High,Mitigate,Network segmentation
+R9,Telemedicine Platform,Service outage,Dependency on SaaS provider,3,3,9,Medium,Transfer,SLA agreement
+R10,Backup System,Backup failure,Improper configuration,5,2,10,Medium,Mitigate,Backup monitoring
+R11,HR Data,Insider misuse,Excessive privileges,4,3,12,High,Mitigate,Access review
+R12,Cloud Services,Data leak,Misconfiguration,5,3,15,High,Mitigate,Security configuration review
