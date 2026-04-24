@@ -2,3 +2,6 @@ Risk ID,Asset,Threat,Vulnerability,Impact,Likelihood,Risk Score,Priority,Treatme
 R1,Patient Database,Ransomware infection,Flat network architecture,5,3,15,High,Mitigate,Network segmentation and EDR
 R2,Telemedicine Platform,Account takeover,Shared user accounts,5,4,20,Critical,Mitigate,MFA and unique accounts
 R3,Backup System,Data loss,Backup restore never tested,5,3,15,High,Mitigate,Regular restore testing
+R4,Microsoft 365,Phishing attack,Low security awareness training,4,4,16,High,Mitigate,Security awareness training and email filtering
+R5,Active Directory,Privilege escalation,Weak password policies,5,3,15,High,Mitigate,Strong password policy and MFA
+R6,Employee Laptops,Device theft,No enforced disk encryption,4,2,8,Medium,Mitigate,Full disk encryption and remote wipe
