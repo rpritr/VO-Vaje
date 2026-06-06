@@ -2,3 +2,16 @@ Asset ID,Asset Name,Type,Owner,Location,Confidentiality,Integrity,Availability,C
 A1,Patient Database,Information,Medical Director,On-prem server,H,H,H,Critical
 A2,Active Directory,System,IT Manager,Server room,H,H,H,Critical
 A3,Telemedicine Platform,SaaS,Medical Director,Cloud,H,H,H,Critical
+A4,Microsoft 365,Cloud,IT Manager,Cloud,H,H,H,Critical
+A5,VMware Infrastructure,System,IT Manager,Server room,H,H,H,Critical
+A6,Lab Diagnostics System,Application,Lab Head,On-prem,H,H,H,Critical
+A7,Backup System,Service,IT Manager,NAS,H,H,H,Critical
+A8,Internal Network,Infrastructure,IT Manager,Office,H,H,H,Critical
+A9,VPN Access,Service,IT Manager,Remote,H,H,H,Critical
+A10,Windows Laptops,Hardware,IT Manager,Office,M,M,M,Medium
+A11,Medical Workstations,Hardware,IT Manager,Clinic,H,H,H,High
+A12,Reception PCs,Hardware,IT Manager,Reception,M,M,M,Medium
+A13,HR Data,Information,HR Manager,Cloud,H,H,M,High
+A14,Financial System,SaaS,Finance,Cloud,M,H,M,Medium
+A15,Telemedicine Video Records,Information,Medical Director,Cloud,H,H,M,High
+A16,Corporate Client Contracts,Information,Finance,Cloud,H,H,M,High
