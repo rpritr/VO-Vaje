@@ -2,12 +2,12 @@
 
 ## 1. Organization Information
 
-- Organization Name:
+- Organization Name: BlueRiver Health Ltd.
 - Address:
-- IT Department Contact:
-- DR Plan Owner:
-- Date Created:
-- Last Updated:
+- IT Department Contact: IT Support – it-support@blueriverhealth.com
+- DR Plan Owner: IT Manager
+- Date Created: 6st of March 2026
+- Last Updated: 6st of March 2026
 
 ---
 

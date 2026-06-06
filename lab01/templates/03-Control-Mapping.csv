@@ -2,3 +2,10 @@ Control ID,Control Description,Type,Risk Addressed,Implementation Effort,Verific
 C1,Enable MFA for VPN and SaaS access,Technical,R2;R6,Medium,Identity provider configuration
 C2,Security awareness training program,Organizational,R4,Low,Training attendance records
 C3,Network segmentation of critical systems,Technical,R1,High,Network diagram and firewall rules
+C4,Unique user accounts for telemedicine platform,Administrative,R2,Low,User account audit
+C5,Endpoint Detection and Response (EDR) deployment,Technical,R1;R5,Medium,Security monitoring dashboard
+C6,Backup restoration testing procedure,Operational,R3,Low,Backup test reports
+C7,Full disk encryption on laptops and tablets,Technical,R5;R7,Medium,Device security configuration audit
+C8,Mobile Device Management (MDM) implementation,Technical,R7,Medium,MDM system compliance reports
+C9,Access control policy and role-based permissions,Administrative,R6;R9,Medium,Access review logs
+C10,Email phishing protection and filtering,Technical,R4,Medium,Email security system reports

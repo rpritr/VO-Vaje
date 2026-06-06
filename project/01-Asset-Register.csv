@@ -1,0 +1,26 @@
+Asset ID,Asset Name,Type,Owner,Location,Confidentiality,Integrity,Availability,Criticality,Notes
+A1,Microsoft 365 Tenant,Cloud Service,IT Manager,Cloud,High,High,High,Critical,"Email, Teams, SharePoint, OneDrive, identities"
+A2,ERP System,Application,Finance Manager,Cloud/Hosted,High,High,High,Critical,"Offers, orders, invoices, stock and finance"
+A3,CRM System,Application,Sales Manager,Cloud,Medium,High,High,High,"Customer accounts, pipeline, contracts"
+A4,PSA / Ticketing System,Application,Service Manager,Cloud,High,High,High,Critical,"Support tickets, SLA tracking, service records"
+A5,RMM Platform,Cloud Service,Head of Engineering,Cloud,High,High,High,Critical,Remote monitoring and administration of customer endpoints/servers
+A6,Password Vault / PAM,Security System,IT Manager,Cloud,High,High,High,Critical,Privileged credentials and shared secrets
+A7,VPN Gateway,Infrastructure,Network Lead,Office / Cloud,Medium,High,High,High,Remote access for employees and admins
+A8,Firewall Appliance,Infrastructure,Network Lead,Office,Medium,High,High,High,Perimeter security and site connectivity
+A9,Core Switches and Wi-Fi,Infrastructure,Network Lead,Office,Low,High,High,Medium,Internal connectivity
+A10,Virtualization Hosts,Infrastructure,Systems Lead,Server Room,Medium,High,High,High,Hosts internal servers and lab VMs
+A11,Internal File Server / NAS,Infrastructure,Systems Lead,Server Room,High,High,High,Critical,"Shared documents, exports, internal backups"
+A12,Backup Repository,Infrastructure,Systems Lead,Server Room / Cloud,High,High,High,Critical,Backup copies of critical systems
+A13,Documentation Repository,Information,PMO / Engineering,SharePoint/Confluence,High,High,High,Critical,"Customer diagrams, configs, SOPs"
+A14,Admin Workstations,Endpoint,IT Manager,Office / Remote,High,High,High,Critical,Used by sysadmins and security engineers
+A15,User Laptops,Endpoint,IT Manager,Office / Remote,Medium,Medium,High,Medium,35 standard employee laptops
+A16,Mobile Phones,Endpoint,IT Manager,Mobile,Medium,Medium,Medium,Medium,10 company phones for managers and engineers
+A17,Test / Lab Environment,Infrastructure,Engineering Lead,Office,Low,High,Medium,Medium,Validation and staging of solutions
+A18,Customer Contracts and SLA Records,Information,Sales Manager,ERP/SharePoint,High,High,Medium,High,Commercial and contractual obligations
+A19,HR and Payroll Data,Information,HR Manager,ERP/M365,High,High,Medium,High,Employee personal and payroll data
+A20,Finance and Accounting Records,Information,Finance Manager,ERP,High,High,Medium,High,"Invoices, payments, accounting"
+A21,Vendor Portals and Distributor Accounts,External Service,Procurement Lead,Cloud,Medium,High,Medium,Medium,Ordering equipment and licenses
+A22,Security Monitoring Logs,Information,Security Lead,M365 / SIEM,Medium,High,High,High,Audit logs and security events
+A23,Remote Access to Customer Environments,Access Service,Head of Engineering,Customer Systems,High,High,High,Critical,"VPNs, jump hosts, admin portals"
+A24,Corporate Website and Email Domain,Digital Asset,Marketing Lead,Cloud,Medium,High,High,High,Brand trust and phishing exposure
+A25,Employees and Contractors,People,HR Manager,All Locations,N/A,N/A,N/A,High,Human factor and operational knowledge

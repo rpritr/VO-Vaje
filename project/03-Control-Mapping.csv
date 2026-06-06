@@ -1,0 +1,16 @@
+Control ID,Control Name,Type,Description,Addresses Risks,Implementation Effort,Verification Method,Reference
+C1,Identity and MFA Baseline,Technical,"Enforce MFA for M365, VPN, vault, ticketing, ERP and admin accounts",R1;R2;R5;R10;R15,Medium,Conditional access reports; monthly exceptions review,"NIST PR.AA / ISO 27001 Annex A 5.17, 8.2"
+C2,Privileged Access Management,Technical,"Store privileged credentials in a vault, use named admin accounts and session logging",R1;R5;R15;R17,High,Vault audit logs; quarterly admin account review,"ISO 27001 Annex A 5.18, 8.18"
+C3,Role-Based Access Control,Administrative,"Define roles for sales, service desk, engineers, security engineers and finance",R3;R5;R13;R17,Medium,Quarterly access recertification,"ISO 27001 Annex A 5.15, 5.16"
+C4,Security Awareness and Phishing Program,Organizational,"Run onboarding training, annual awareness and quarterly phishing simulations",R2;R10;R17,Low,Completion rate; phishing click rate,NIST PR.AT / ISO 27001 Annex A 6.3
+C5,Email and Domain Protection,Technical,"Deploy secure email filtering and enforce SPF, DKIM and DMARC",R2;R10,Medium,Mail security dashboard; DMARC reports,NIST PR.DS / ISO 27001 Annex A 8.23
+C6,Endpoint Protection and EDR,Technical,Managed EDR on laptops and admin workstations with central alerting,R2;R4;R7;R8;R14,Medium,Coverage report; response metrics,"NIST DE.CM / ISO 27001 Annex A 8.7, 8.16"
+C7,Patch and Vulnerability Management,Technical,"Monthly patch cycle, critical fixes within 7 days, regular vulnerability scans",R8;R16,Medium,Patch compliance dashboard; scan results,NIST PR.IP / ISO 27001 Annex A 8.8
+C8,Network Segmentation,Technical,"Separate user, admin, server, guest and lab networks with firewall rules",R4;R9;R16,High,Network diagram; firewall rule review; test of segmentation,"ISO 27001 Annex A 8.20, 8.22"
+C9,Backup and Restore Management,Technical,3-2-1 backup strategy with immutable/offsite copies and monthly restore tests,R4;R6;R18,Medium,Restore test evidence; backup success rate,NIST PR.IP / ISO 27001 Annex A 8.13
+C10,Data Classification and Handling,Administrative,"Classify customer documentation, contracts, HR and finance data; define handling rules",R3;R11;R13,Medium,Label usage; access review; sample audit,"ISO 27001 Annex A 5.12, 5.13"
+C11,Logging and Monitoring,Technical,"Collect audit logs from M365, vault, VPN, servers and security tools; define alerts",R1;R5;R14,Medium,Alert tuning review; use case coverage,NIST DE.AE / ISO 27001 Annex A 8.15
+C12,Incident Response Plan and Playbooks,Organizational,"Define roles, severity levels and playbooks for phishing, ransomware, account misuse and customer-impacting events",R4;R14;R18,Medium,Tabletop exercise results; PIR records,NIST RS / ISO 27001 Annex A 5.24-5.28
+C13,Mobile Device and Disk Encryption,Technical,"MDM enrollment, full-disk encryption, remote wipe and screen lock enforcement",R7,Medium,MDM compliance report,"ISO 27001 Annex A 8.1, 8.11"
+C14,Vendor Security Management,Administrative,"Assess critical suppliers, include security clauses and review SaaS access",R1;R12;R18,Low,Vendor register; completed assessments,ISO 27001 Annex A 5.19-5.22
+C15,Joiner-Mover-Leaver Process,Administrative,Formal onboarding/offboarding and rapid revocation of accounts and tokens,R5;R17,Low,HR-IT checklist completion,ISO 27001 Annex A 6.5
